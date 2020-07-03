@@ -1,4 +1,4 @@
-# [ReadMe in English](https://github.com/Mararsh/MyBox_documents/zh/tree/master/en)   ![ReadMe](https://mararsh.github.io/MyBox/iconGo.png)   
+# [ReadMe in English](https://github.com/Mararsh/MyBox_documents/tree/master/en)   ![ReadMe](https://mararsh.github.io/MyBox/iconGo.png)   
 
 # MyBox的文档
 
