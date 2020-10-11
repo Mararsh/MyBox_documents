@@ -17,8 +17,8 @@
 
 # 参考资料
 
-## [tesseract](https://mararsh.github.io/MyBox_documents/zh/About tesseract.htm)      
+## [tesseract](https://mararsh.github.io/MyBox_documents/zh/AboutTesseract.htm)      
 
-## [媒体](https://mararsh.github.io/MyBox_documents/zh/About Media.htm)  
+## [媒体](https://mararsh.github.io/MyBox_documents/zh/AboutMedia.htm)  
 
 

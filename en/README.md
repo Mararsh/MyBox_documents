@@ -16,6 +16,6 @@
 
 # Reference
 
-## [tesseract](https://mararsh.github.io/MyBox_documents/en/About tesseract.htm)      
+## [tesseract](https://mararsh.github.io/MyBox_documents/en/AboutTesseract.htm)      
 
-## [Media](https://mararsh.github.io/MyBox_documents/en/About Media.htm)     
+## [Media](https://mararsh.github.io/MyBox_documents/en/AboutMedia.htm)     
