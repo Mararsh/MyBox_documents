@@ -1,0 +1,825 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>MyBox用户手册 -  开发工具</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.13  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Mara Ren">
+	<META NAME="CREATED" CONTENT="20180728;13155733">
+	<META NAME="CHANGEDBY" CONTENT="Mara Ren">
+	<META NAME="CHANGED" CONTENT="20220831;17103909">
+	<META NAME="CLASSIFICATION" CONTENT="MyBox用户手册 -  开发工具">
+	<META NAME="DESCRIPTION" CONTENT="Mara">
+	<META NAME="KEYWORDS" CONTENT="MyBox 用户手册 开发工具">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin-left: 1.5cm; margin-right: 1cm }
+		P { margin-bottom: 0.21cm }
+		H1 { margin-bottom: 0.21cm }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
+		H1.cjk { font-family: "微软雅黑"; font-size: 16pt; so-language: zh-CN; font-style: normal; font-weight: bold }
+		H1.ctl { font-family: "Lucida Sans"; font-size: 16pt; font-weight: bold }
+		H2 { margin-bottom: 0.21cm; page-break-before: auto }
+		H2.western { font-family: "Arial", sans-serif; font-size: 14pt; font-style: normal }
+		H2.cjk { font-family: "微软雅黑"; font-size: 14pt; so-language: zh-CN }
+		H2.ctl { font-family: "Lucida Sans"; font-size: 14pt; font-style: italic; font-weight: normal }
+		TD P { margin-bottom: 0cm }
+		TH P { margin-bottom: 0cm }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="zh-CN" DIR="LTR">
+<DIV TYPE=HEADER>
+	<P ALIGN=CENTER STYLE="margin-bottom: 0.5cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">MyBox</SPAN></FONT>用户手册
+	<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">-  </SPAN></FONT>开发工具
+	<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">v6.5.9</SPAN></FONT></P>
+</DIV>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="MyBox-6.5.9-DevTools-zh_html_m34c59a2.png" NAME="图形21" ALIGN=LEFT WIDTH=500 HEIGHT=500 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-top: 0.42cm; page-break-after: avoid"><FONT FACE="Arial, sans-serif"><FONT SIZE=4><SPAN LANG="en-US"><FONT FACE="隶书, monospace"><FONT SIZE=6 STYLE="font-size: 26pt"><B>MyBox</B></FONT></FONT></SPAN></FONT></FONT><FONT FACE="微软雅黑"><FONT SIZE=4><FONT FACE="隶书, monospace"><FONT SIZE=6 STYLE="font-size: 26pt"><SPAN LANG="zh-CN"><B>：简易工具箱</B></SPAN></FONT></FONT></FONT></FONT></P>
+<P ALIGN=CENTER><FONT FACE="隶书, monospace"><FONT SIZE=6 STYLE="font-size: 26pt"><B>用户手册
+</B></FONT></FONT><FONT FACE="隶书, monospace"><FONT SIZE=6 STYLE="font-size: 26pt"><SPAN LANG="en-US"><B>-
+</B></SPAN></FONT></FONT><FONT FACE="隶书, monospace"><FONT SIZE=6 STYLE="font-size: 26pt"><B>开发工具</B></FONT></FONT></P>
+<P ALIGN=CENTER><BR><BR>
+</P>
+<P ALIGN=CENTER><BR><BR>
+</P>
+<P ALIGN=CENTER STYLE="font-weight: normal"><FONT FACE="隶书, monospace"><FONT SIZE=6 STYLE="font-size: 22pt">作者：</FONT></FONT><FONT FACE="隶书, monospace"><FONT SIZE=6 STYLE="font-size: 22pt"><SPAN LANG="en-US">Mara</SPAN></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="font-weight: normal"><FONT FACE="隶书, monospace"><FONT SIZE=6 STYLE="font-size: 22pt">版本：</FONT></FONT><FONT FACE="隶书, monospace"><FONT SIZE=6 STYLE="font-size: 22pt"><SPAN LANG="en-US">6.5.9</SPAN></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="font-weight: normal"><FONT FACE="隶书, monospace"><FONT SIZE=6 STYLE="font-size: 22pt">日期：</FONT></FONT><FONT FACE="隶书, monospace"><FONT SIZE=6 STYLE="font-size: 22pt"><SPAN LANG="en-US">2022-8-31</SPAN></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; page-break-before: always"><BR>
+</P>
+<DIV ID="内容目录1" DIR="LTR">
+	<DIV ID="内容目录1_Head" DIR="LTR">
+		<P STYLE="margin-top: 0.42cm; page-break-after: avoid"><FONT FACE="微软雅黑"><FONT SIZE=4 STYLE="font-size: 16pt"><B>内容目录</B></FONT></FONT></P>
+	</DIV>
+	<P STYLE="margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">1
+	</SPAN></FONT>简介<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	3</SPAN></FONT></P>
+	<P STYLE="margin-left: 0.74cm; margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">1.1
+	</SPAN></FONT>主菜单<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	3</SPAN></FONT></P>
+	<P STYLE="margin-left: 0.74cm; margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">1.2
+	</SPAN></FONT>资源地址<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	4</SPAN></FONT></P>
+	<P STYLE="margin-left: 0.74cm; margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">1.3
+	</SPAN></FONT>文档<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	5</SPAN></FONT></P>
+	<P STYLE="margin-left: 0.74cm; margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">1.4
+	</SPAN></FONT>工具的菜单<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	5</SPAN></FONT></P>
+	<P STYLE="margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2
+	</SPAN></FONT>内存<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">/CPU</SPAN></FONT>监视条
+	<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	6</SPAN></FONT></P>
+	<P STYLE="margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">3
+	MyBox</SPAN></FONT>的属性 <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	6</SPAN></FONT></P>
+	<P STYLE="margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">4
+	MyBox</SPAN></FONT>日志<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	7</SPAN></FONT></P>
+	<P STYLE="margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5
+	</SPAN></FONT>运行系统命令 <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	8</SPAN></FONT></P>
+	<P STYLE="margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6
+	</SPAN></FONT>启动<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">JConsole</SPAN></FONT>（<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">Java</SPAN></FONT>监视和管理控制台）
+	<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	9</SPAN></FONT></P>
+	<P STYLE="margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">7
+	</SPAN></FONT>管理语言 <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	10</SPAN></FONT></P>
+	<P STYLE="margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">8
+	</SPAN></FONT>制作图标 <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	11</SPAN></FONT></P>
+	<P STYLE="margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">9
+	MyBox</SPAN></FONT>内部表 <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	12</SPAN></FONT></P>
+	<P STYLE="margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">10
+	</SPAN></FONT>自动测试<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">-</SPAN></FONT>打开界面
+	<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	13</SPAN></FONT></P>
+	<P STYLE="margin-bottom: 0cm"> <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">11
+	</SPAN></FONT>给作者发消息 <FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	14</SPAN></FONT></P>
+</DIV>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<H1 CLASS="cjk" STYLE="page-break-before: always"> 1 </SPAN></FONT>简介</H1>
+<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	</SPAN></FONT>这是利用<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">JavaFx</SPAN></FONT>开发的图形化桌面应用，目标是提供简单易用的功能。免费开源。
+</P>
+<H2 CLASS="cjk"> 1.1 </SPAN></FONT>主菜单</H2>
+<P><IMG SRC="MyBox-6.5.9-DevTools-zh_html_2af07269.png" NAME="图形2" ALIGN=LEFT WIDTH=699 HEIGHT=632 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<H2 CLASS="cjk"> 1.2 </SPAN></FONT>资源地址</H2>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<TABLE WIDTH=698 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=181>
+	<COL WIDTH=499>
+	<THEAD>
+		<TR>
+			<TH WIDTH=181>
+				<P>内容 
+				</P>
+			</TH>
+			<TH WIDTH=499>
+				<P>链接 
+				</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD WIDTH=181>
+				<P>项目主页 
+				</P>
+			</TD>
+			<TD WIDTH=499>
+				<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://github.com/Mararsh/MyBox/">https://github.com/Mararsh/MyBox/</A>
+				</SPAN></FONT>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=181>
+				<P>源代码和编译好的包 
+				</P>
+			</TD>
+			<TD WIDTH=499>
+				<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://github.com/Mararsh/MyBox/releases">https://github.com/Mararsh/MyBox/releases</A></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=181>
+				<P>提交软件需求和问题报告 
+				</P>
+			</TD>
+			<TD WIDTH=499>
+				<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://github.com/Mararsh/MyBox/issues">https://github.com/Mararsh/MyBox/issues</A>
+				</SPAN></FONT>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=181>
+				<P>数据 
+				</P>
+			</TD>
+			<TD WIDTH=499>
+				<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://github.com/Mararsh/MyBox_data%20">https://github.com/Mararsh/MyBox_data
+				</A> </SPAN></FONT>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=181>
+				<P>文档 
+				</P>
+			</TD>
+			<TD WIDTH=499>
+				<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://github.com/Mararsh/MyBox_documents">https://github.com/Mararsh/MyBox_documents</A>
+				</SPAN></FONT>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=181>
+				<P>镜像 
+				</P>
+			</TD>
+			<TD WIDTH=499>
+				<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://sourceforge.net/projects/mara-mybox/files/">https://sourceforge.net/projects/mara-mybox/files/</A>
+				</SPAN></FONT>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=181>
+				<P>云盘 
+				</P>
+			</TD>
+			<TD WIDTH=499>
+				<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://pan.baidu.com/s/1fWMRzym_jh075OCX0D8y8A#list/path=%2F">https://pan.baidu.com/s/1fWMRzym_jh075OCX0D8y8A#list/path=%2F</A>
+				</SPAN></FONT>
+				</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><BR><BR>
+</P>
+<P><IMG SRC="MyBox-6.5.9-DevTools-zh_html_m626da70f.png" NAME="图形3" ALIGN=LEFT WIDTH=699 HEIGHT=524 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	</SPAN></FONT></P>
+<H2 CLASS="cjk"> 1.3 </SPAN></FONT>文档</H2>
+<P><BR><BR>
+</P>
+<DL>
+	<DL>
+		<DL>
+			<DD>
+			<TABLE WIDTH=506 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+				<COL WIDTH=143>
+				<COL WIDTH=44>
+				<COL WIDTH=74>
+				<COL WIDTH=94>
+				<COL WIDTH=109>
+				<THEAD>
+					<TR>
+						<TH WIDTH=143>
+							<P>文档名 
+							</P>
+						</TH>
+						<TH WIDTH=44>
+							<P>版本 
+							</P>
+						</TH>
+						<TH WIDTH=74>
+							<P>修改时间 
+							</P>
+						</TH>
+						<TH WIDTH=94>
+							<P><SPAN LANG="zh-CN">中文</SPAN> 
+							</P>
+						</TH>
+						<TH WIDTH=109>
+							<P>英文</P>
+						</TH>
+					</TR>
+				</THEAD>
+				<TBODY>
+					<TR>
+						<TD WIDTH=143>
+							<P>开发日志 
+							</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6.5.9
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2022-8-31
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox/mybox_devLogs.html">html</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox/mybox_devLogs_en.html">html</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=143>
+							<P>快捷键 
+							</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6.5.6
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2022-6-11
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox/mybox_shortcuts.html">html</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox/mybox_shortcuts_en.html">html</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=143>
+							<P>打包步骤 
+							</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6.3.3
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2020-9-27
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox/pack_steps.html">html</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox/pack_steps_en.html">html</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=143>
+							<P>开发指南 
+							</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2.1 </SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2020-8-27
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-DevGuide-2.1-zh.pdf">PDF</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-DevGuide-2.1-en.pdf">PDF</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=143>
+							<P>用户手册<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">-</SPAN></FONT>综述
+														</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6.5.9</SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2022-8-31</SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-Overview-zh/MyBox-6.5.9-Overview-zh.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-Overview-zh.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-Overview-zh.odt">odt</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-Overview-en/MyBox-6.5.9-Overview-en.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-Overview-en.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-Overview-en.odt">odt</A></SPAN></FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=143>
+							<P>用户手册<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">-</SPAN></FONT>文档工具
+														</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6.5.9
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2022-8-31</SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-DocumentTools-zh/MyBox-6.5.9-DocumentTools-zh.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-DocumentTools-zh.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-DocumentTools-zh.odt">odt</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-DocumentTools-en/MyBox-6.5.9-DocumentTools-en.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-DocumentTools-en.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-DocumentTools-en.odt">odt</A></SPAN></FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=143>
+							<P>用户手册<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">-</SPAN></FONT>图像工具
+														</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6.5.9
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2022-8-31</SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-ImageTools-zh/MyBox-6.5.9-ImageTools-zh.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-ImageTools-zh.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-ImageTools-zh.odt">odt</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-ImageTools-en/MyBox-6.5.9-ImageTools-en.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-ImageTools-en.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-ImageTools-en.odt">odt</A>
+							</SPAN></FONT>
+							</P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=143>
+							<P>用户手册<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">-</SPAN></FONT>文件工具
+														</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6.5.9
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2022-8-31</SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-FileTools-zh/MyBox-6.5.9-FileTools-zh.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-FileTools-zh.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-FileTools-zh.odt">odt</A></SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-FileTools-en/MyBox-6.5.9-FileTools-en.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-FileTools-en.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-FileTools-en.odt">odt</A></SPAN></FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=143>
+							<P>用户手册<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">-</SPAN></FONT>网络工具
+														</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6.5.9
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2022-8-31</SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-NetworkTools-zh/MyBox-6.5.9-NetworkTools-zh.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-NetworkTools-zh.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-NetworkTools-zh.odt">odt</A></SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-NetworkTools-en/MyBox-6.5.9-NetworkTools-en.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-NetworkTools-en.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-NetworkTools-en.odt">odt</A></SPAN></FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=143>
+							<P>用户手册<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">-</SPAN></FONT>数据工具
+														</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6.5.9
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2022-8-31</SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-DataTools-zh/MyBox-6.5.9-DataTools-zh.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-DataTools-zh.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-DataTools-zh.odt">odt</A></SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-DataTools-en/MyBox-6.5.9-DataTools-en.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-DataTools-en.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-DataTools-en.odt">odt</A></SPAN></FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=143>
+							<P>用户手册<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">-</SPAN></FONT>媒体工具
+														</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6.5.9
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2022-8-31</SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-MediaTools-zh/MyBox-6.5.9-MediaTools-zh.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-MediaTools-zh.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-MediaTools-zh.odt">odt</A></SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-MediaTools-en/MyBox-6.5.9-MediaTools-en.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-MediaTools-en.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-MediaTools-en.odt">odt</A></SPAN></FONT></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=143>
+							<P>用户手册<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">-</SPAN></FONT><SPAN LANG="zh-CN">开发</SPAN>工具
+														</P>
+						</TD>
+						<TD WIDTH=44>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6.5.9
+							</SPAN></FONT>
+							</P>
+						</TD>
+						<TD WIDTH=74>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2022-8-31</SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=94>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-DevTools-zh/MyBox-6.5.9-DevTools-zh.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-DevTools-zh.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/zh/MyBox-6.5.9-DevTools-zh.odt">odt</A></SPAN></FONT></P>
+						</TD>
+						<TD WIDTH=109>
+							<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-DevTools-en/MyBox-6.5.9-DevTools-en.html">html</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-DevTools-en.pdf">PDF</A>
+							<A HREF="https://mararsh.github.io/MyBox_documents/en/MyBox-6.5.9-DevTools-en.odt">odt</A></SPAN></FONT></P>
+						</TD>
+					</TR>
+				</TBODY>
+			</TABLE>
+		</DL>
+	</DL>
+</DL>
+<H2 CLASS="cjk"> 1.4 </SPAN></FONT>工具的菜单</H2>
+<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">		</SPAN></FONT><SPAN LANG="zh-CN">在主菜单中选择“开发”，则弹出开发工具的菜单：</SPAN></P>
+<P><A NAME="devTools"></A><IMG SRC="MyBox-6.5.9-DevTools-zh_html_4efbfe29.png" NAME="图形13" ALIGN=LEFT WIDTH=447 HEIGHT=424 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<H1 CLASS="cjk"> 2 </SPAN></FONT>内存<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">/CPU</SPAN></FONT>监视条
+</H1>
+<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	</SPAN></FONT>当<SPAN LANG="zh-CN">监视条被打开时，窗口上部每秒刷新一次内存</SPAN><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">/CPU</SPAN></FONT><SPAN LANG="zh-CN">的使用状态。</SPAN></P>
+<H1 CLASS="cjk"> 3 <IMG SRC="MyBox-6.5.9-DevTools-zh_html_50cb9b6e.png" NAME="图形14" ALIGN=LEFT WIDTH=699 HEIGHT=68 BORDER=0><BR CLEAR=LEFT>MyBox</SPAN></FONT>的属性
+</H1>
+<P><IMG SRC="MyBox-6.5.9-DevTools-zh_html_4375def3.png" NAME="图形15" ALIGN=LEFT WIDTH=699 HEIGHT=725 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<H1 CLASS="cjk"> 4 MyBox</SPAN></FONT>日志</H1>
+<OL>
+	<OL>
+		<LI><P STYLE="margin-bottom: 0cm">类型包括：错误、信息、调试、终端：
+				</P>
+	</OL>
+</OL>
+<UL>
+	<LI><P STYLE="margin-bottom: 0cm">所有日志都会显示在终端。
+		</P>
+	<LI><P STYLE="margin-bottom: 0cm">“错误”和“信息”总是写入数据库。
+		</P>
+	<LI><P STYLE="margin-bottom: 0cm">“调试<SPAN LANG="zh-CN">”</SPAN>只在开发模式下才写入数据库。
+		</P>
+	<LI><P STYLE="margin-bottom: 0cm">“终端<SPAN LANG="zh-CN">”</SPAN>从不写入数据库。
+		</P>
+</UL>
+<OL>
+	<OL START=2>
+		<LI><P STYLE="margin-bottom: 0cm">字段：标识、时间、类型、文件名、类名、方法名、行号、调用者、注释。</P>
+		<LI><P STYLE="margin-bottom: 0cm">“调用者”是调用链，每行是一个节点：</P>
+		<P STYLE="margin-bottom: 0cm">文件名、类名、方法名、行号。调用链只记录<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">MyBox</SPAN></FONT>自身的方法。</P>
+		<LI><P STYLE="margin-bottom: 0cm">“错误”会导致查看日志的界面被弹出。</P>
+		<P STYLE="margin-bottom: 0cm"></P>
+	</OL>
+</OL>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="MyBox-6.5.9-DevTools-zh_html_486ecb68.png" NAME="图形16" ALIGN=LEFT WIDTH=691 HEIGHT=544 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H1 CLASS="cjk"> 5 </SPAN></FONT>运行系统命令 
+</H1>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="MyBox-6.5.9-DevTools-zh_html_6fd8465a.png" NAME="图形17" ALIGN=LEFT WIDTH=683 HEIGHT=389 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<H1 CLASS="cjk"> 6 </SPAN></FONT>启动<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">JConsole</SPAN></FONT>（<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">Java</SPAN></FONT>监视和管理控制台）
+</H1>
+<P><IMG SRC="MyBox-6.5.9-DevTools-zh_html_m2d2f42e7.png" NAME="图形18" ALIGN=LEFT WIDTH=689 HEIGHT=559 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<H1 CLASS="cjk"> 7 </SPAN></FONT>管理语言 
+</H1>
+<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	</SPAN></FONT>此工具用于管理<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">MyBox</SPAN></FONT>的定制语言：</P>
+<OL>
+	<OL>
+		<LI><P>点击按钮“添加”以创建一个新语言。</P>
+		<LI><P>编辑语言的翻译项：</P>
+	</OL>
+</OL>
+<UL>
+	<LI><P>选择表中的一行。</P>
+	<LI><P>点击行中的单元，则一个文本输入框显示出来以供填写。</P>
+	<LI><P>保持空白以缺省用英语。</P>
+</UL>
+<OL>
+	<OL START=3>
+		<LI><P>点击按钮“复制”以把翻译项的英语复制到输入框中。</P>
+		<LI><P>点击按钮“保存”以保存修改。</P>
+	</OL>
+</OL>
+<P><IMG SRC="MyBox-6.5.9-DevTools-zh_html_26aa4b34.png" NAME="图形19" ALIGN=LEFT WIDTH=688 HEIGHT=306 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<H1 CLASS="cjk"> 8 </SPAN></FONT>制作图标 
+</H1>
+<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	</SPAN></FONT><SPAN LANG="zh-CN">此工具帮助由浅蓝色图标自动生成其它颜色的图标。</SPAN></P>
+<P><BR><BR>
+</P>
+<P><IMG SRC="MyBox-6.5.9-DevTools-zh_html_5e7eec0c.png" NAME="图形20" ALIGN=LEFT WIDTH=659 HEIGHT=490 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<H1 CLASS="cjk"> 9 MyBox</SPAN></FONT>内部表 
+</H1>
+<P><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="MyBox-6.5.9-DevTools-zh_html_m6b944421.png" NAME="图形22" ALIGN=LEFT WIDTH=699 HEIGHT=655 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H1 CLASS="cjk"> 10 </SPAN></FONT>自动测试<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">-</SPAN></FONT>打开界面
+</H1>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="MyBox-6.5.9-DevTools-zh_html_m34263960.png" NAME="图形23" ALIGN=LEFT WIDTH=699 HEIGHT=474 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H1 CLASS="cjk"> 11 </SPAN></FONT>给作者发消息 
+</H1>
+<P><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">	</SPAN></FONT>欢迎提交问题报告或需求申请。</P>
+<P><BR><BR>
+</P>
+<P><IMG SRC="MyBox-6.5.9-DevTools-zh_html_m20ee2d.png" NAME="图形24" ALIGN=LEFT WIDTH=699 HEIGHT=549 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<H1 CLASS="cjk"></H1>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>&lt;</B></SPAN></FONT><B>文档结束</B><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>&gt;</B></SPAN></FONT></P>
+<DIV TYPE=FOOTER>
+	<P ALIGN=RIGHT STYLE="margin-top: 0.5cm; margin-bottom: 0cm"><SPAN LANG="zh-CN">第</SPAN><SDFIELD TYPE=PAGE SUBTYPE=RANDOM FORMAT=PAGE><FONT FACE="Times New Roman, serif">14</FONT></SDFIELD><SPAN LANG="zh-CN">页</SPAN>
+	<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">/ </SPAN></FONT><SPAN LANG="zh-CN">共</SPAN><SPAN LANG="zh-CN"><SDFIELD TYPE=DOCSTAT SUBTYPE=PAGE FORMAT=PAGE><FONT FACE="Times New Roman, serif">14</FONT></SDFIELD></SPAN><SPAN LANG="zh-CN">页</SPAN></P>
+</DIV>
+</BODY>
+</HTML>
